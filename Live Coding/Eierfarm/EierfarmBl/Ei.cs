@@ -3,13 +3,17 @@
 public class Ei
 {
     // Konstruktor (Snippet ctor)
-    public Ei()
+    public Ei(Huhn mutter)
     {
         Random random = new Random();
         this.Gewicht = random.Next(45, 81); // Ei-Gewicht zwischen 45g und 80g
         this.Farbe = (EiFarbe)random.Next(3); // Direct-Cast - liefert Exception, wenn Cast fehlschlägt!
         // this.Farbe = (EiFarbe)42;
+
+        this.Mutter = mutter;
     }
+
+    public Huhn Mutter { get; set; }
 
     // Full-qualified Property (propfull)
     // Backing Field für die Gewicht-Property
