@@ -5,6 +5,8 @@ VisualStudioVersion = 17.11.35303.130
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "HistorischeWaehrungenDal", "HistorischeWaehrungenDal\HistorischeWaehrungenDal.csproj", "{E381992C-06B4-4B96-A551-3738F0303B7C}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "HistorischeWaehrungenDalUnitTests", "HistorischeWaehrungenDalUnitTests\HistorischeWaehrungenDalUnitTests.csproj", "{EC7E415D-50A7-4C30-BD57-AC06639645FE}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -15,6 +17,10 @@ Global
 		{E381992C-06B4-4B96-A551-3738F0303B7C}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{E381992C-06B4-4B96-A551-3738F0303B7C}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{E381992C-06B4-4B96-A551-3738F0303B7C}.Release|Any CPU.Build.0 = Release|Any CPU
+		{EC7E415D-50A7-4C30-BD57-AC06639645FE}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{EC7E415D-50A7-4C30-BD57-AC06639645FE}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{EC7E415D-50A7-4C30-BD57-AC06639645FE}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{EC7E415D-50A7-4C30-BD57-AC06639645FE}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
