@@ -3,7 +3,7 @@
 public class Ei
 {
     // Konstruktor (Snippet ctor)
-    public Ei(Huhn mutter)
+    public Ei(IEileger mutter)
     {
         Random random = new Random();
         this.Gewicht = random.Next(45, 81); // Ei-Gewicht zwischen 45g und 80g
@@ -13,7 +13,7 @@ public class Ei
         this.Mutter = mutter;
     }
 
-    public Huhn Mutter { get; set; }
+    public IEileger Mutter { get; set; }
 
     // Full-qualified Property (propfull)
     // Backing Field für die Gewicht-Property
@@ -38,6 +38,8 @@ public class Ei
     public DateTime Legedatum { get; set; } = DateTime.Now;
 
     public EiFarbe Farbe { get; set; }
+
+
 }
 
 public enum EiFarbe

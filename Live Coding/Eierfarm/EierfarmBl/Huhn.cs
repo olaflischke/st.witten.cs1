@@ -6,21 +6,14 @@ using System.Threading.Tasks;
 
 namespace EierfarmBl;
 
-public class Huhn
+public class Huhn : Gefluegel
 {
-    public Huhn(string name)
+    public Huhn(string name) : base(name) // Aufruf des Konstruktors der Basisklasse
     {
-        this.Name = name;
         this.Gewicht = 1000;
     }
 
-    public double Gewicht { get; set; }
-    public string Name { get; set; }
-    public Guid Id { get; set; } = Guid.NewGuid();
-    public List<Ei> Eier { get; set; } = new List<Ei>();
-    public DateTime Schluepfdatum { get; set; } = DateTime.Now;
-
-    public void Fressen()
+    public override void Fressen()
     {
         if (this.Gewicht < 3000)
         {
@@ -29,7 +22,7 @@ public class Huhn
         }
     }
 
-    public void EiLegen()
+    public override void EiLegen()
     {
         if (this.Gewicht > 1500)
         {
