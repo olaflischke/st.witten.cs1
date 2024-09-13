@@ -17,6 +17,16 @@ namespace HistorischeWaehrungenDalUnitTests
         {
             Archiv archiv = new Archiv(url);
 
+            Handelstag? erster=archiv.Handelstage.FirstOrDefault();
+            if (erster != null)
+            {
+                Waehrung? usd = erster.Waehrungen.FirstOrDefault();
+                if (usd != null)
+                {
+                    Console.WriteLine($"{erster.Datum}: {usd.EuroKurs} {usd.IsoZeichen}");
+                }
+            }
+
             Assert.AreEqual(GetAttributeCount("time"), archiv.Handelstage.Count);
         }
 
